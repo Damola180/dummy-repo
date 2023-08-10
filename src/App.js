@@ -162,7 +162,9 @@ function App() {
           </p>
         ) : null}
       </p>
-      <div className="dice-container">{diceElements}</div>
+      <div className="dice-container">
+        <div className="grid-each-die-face">{diceElements} </div>
+      </div>
       {tenzies ? (
         <button onClick={startGame} className="roll-dice">
           New game
